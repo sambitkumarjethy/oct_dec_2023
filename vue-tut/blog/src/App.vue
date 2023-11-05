@@ -3,7 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <HomeComponent data="sambit" msg="Hi from sambit" />
-    <HomeComponent data="Jethy" />
+    <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
 
