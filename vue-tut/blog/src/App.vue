@@ -3,6 +3,7 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" /> -->
     <HomeComponent data="sambit" msg="Hi from sambit" />
+    <HomeComposing />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -10,11 +11,13 @@
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import HomeComponent from "./components/HomeComponent.vue";
+import HomeComposing from "./components/HomeComposing.vue";
 export default {
   name: "App",
   components: {
     // HelloWorld,
     HomeComponent,
+    HomeComposing,
   },
 };
 </script>
