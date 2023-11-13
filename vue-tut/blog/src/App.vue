@@ -5,6 +5,7 @@
     <HomeComponent data="sambit" msg="Hi from sambit" />
     <HomeComposing />
     <TemplateComponet />
+    <StyledComponent />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -14,6 +15,7 @@
 import HomeComponent from "./components/HomeComponent.vue";
 import HomeComposing from "./components/HomeComposing.vue";
 import TemplateComponet from "./components/TemplateComponent.vue";
+import StyledComponent from "./components/StylledComponent.vue";
 export default {
   name: "App",
   components: {
@@ -21,6 +23,7 @@ export default {
     HomeComponent,
     HomeComposing,
     TemplateComponet,
+    StyledComponent,
   },
 };
 </script>

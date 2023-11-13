@@ -10,7 +10,9 @@
     <h3>Button Clicked - {{ success ? "Yes" : "No" }}</h3>
     <h3>Adding variables ________ {{ 10 + 19 }}-------{{ a + b }}</h3>
 
-    <button v-on:click="updateText">Click me</button>
+    <button v-bind:disabled="!disableBtn" v-on:click="updateText">
+      Click me
+    </button>
     <br />
     <button v-bind:disabled="disableBtn" v-on:click="disableBtnFn">
       Disable btn using <span style="color: red">v-bind</span>
