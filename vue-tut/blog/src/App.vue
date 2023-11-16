@@ -7,6 +7,11 @@
     <TemplateComponet />
     <StyledComponent />
     <DataBind />
+    <ChildComponent
+      name="sambit Jethy"
+      v-bind:userName="userName"
+      v-bind:users="users"
+    />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -18,6 +23,7 @@ import HomeComposing from "./components/HomeComposing.vue";
 import TemplateComponet from "./components/TemplateComponent.vue";
 import StyledComponent from "./components/StylledComponent.vue";
 import DataBind from "./components/DataBind.vue";
+import ChildComponent from "./components/ChildComponent.vue";
 export default {
   name: "App",
   components: {
@@ -27,6 +33,20 @@ export default {
     TemplateComponet,
     StyledComponent,
     DataBind,
+    ChildComponent,
+  },
+  data() {
+    return {
+      userName: "Babaul Jethy",
+      users: [
+        { name: "Anil", email: "anil@test.com" },
+        { name: "sidhu", email: "anil11@test.com" },
+        { name: "sam", email: "anil2@test.com" },
+        { name: "Kesab", email: "anilrr@test.com" },
+        { name: "maharaj", email: "anilgg@test.com" },
+        { name: "Swami", email: "anilcc@test.com" },
+      ],
+    };
   },
 };
 </script>
