@@ -7,10 +7,12 @@
     <TemplateComponet />
     <StyledComponent />
     <DataBind />
+    <h1>{{ title }}</h1>
     <ChildComponent
       name="sambit Jethy"
       v-bind:userName="userName"
       v-bind:users="users"
+      v-on:changeTitle="updateTitle($event)"
     />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
@@ -38,6 +40,7 @@ export default {
   data() {
     return {
       userName: "Babaul Jethy",
+      title: "Props tutorial  child to parent App component title here",
       users: [
         { name: "Anil", email: "anil@test.com" },
         { name: "sidhu", email: "anil11@test.com" },
@@ -47,6 +50,11 @@ export default {
         { name: "Swami", email: "anilcc@test.com" },
       ],
     };
+  },
+  methods: {
+    updateTitle(title) {
+      this.title = title;
+    },
   },
 };
 </script>
