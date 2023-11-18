@@ -21,5 +21,17 @@ export default {
       this.$emit("changeTitle", "Parent Updated");
     },
   },
+  beforeCreate: function () {
+    console.warn("Before create");
+  },
+  beforeMount: function () {
+    console.warn("Before mount");
+  },
+  mounted: function () {
+    console.warn("mounted");
+  },
+  created: function () {
+    console.warn("created");
+  },
 };
 </script>
