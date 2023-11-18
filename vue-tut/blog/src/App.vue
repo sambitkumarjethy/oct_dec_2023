@@ -17,6 +17,7 @@
     <SignUp />
     <LoginComponent />
     <FormValidation />
+    <LifeCycleHook />
     <hr />
     <h1>Filters</h1>
     <ul>
@@ -38,6 +39,7 @@ import ChildComponent from "./components/ChildComponent.vue";
 import SignUp from "./components/SignUp.vue";
 import LoginComponent from "./components/LoginComponent.vue";
 import FormValidation from "./components/FormValidation.vue";
+import LifeCycleHook from "./components/lifeCycleHooks.vue";
 export default {
   name: "App",
   components: {
@@ -51,6 +53,7 @@ export default {
     SignUp,
     LoginComponent,
     FormValidation,
+    LifeCycleHook,
   },
   data() {
     return {
