@@ -14,6 +14,7 @@
       v-bind:users="users"
       v-on:changeTitle="updateTitle($event)"
     />
+    <SignUp />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -26,6 +27,7 @@ import TemplateComponet from "./components/TemplateComponent.vue";
 import StyledComponent from "./components/StylledComponent.vue";
 import DataBind from "./components/DataBind.vue";
 import ChildComponent from "./components/ChildComponent.vue";
+import SignUp from "./components/SignUp.vue";
 export default {
   name: "App",
   components: {
@@ -36,6 +38,7 @@ export default {
     StyledComponent,
     DataBind,
     ChildComponent,
+    SignUp,
   },
   data() {
     return {
