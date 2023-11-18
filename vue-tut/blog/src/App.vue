@@ -17,6 +17,12 @@
     <SignUp />
     <LoginComponent />
     <FormValidation />
+    <hr />
+    <h1>Filters</h1>
+    <ul>
+      <li>It is global scope - once declared can be used any where</li>
+    </ul>
+    <h5>{{ name | Ucase }}</h5>
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -58,6 +64,7 @@ export default {
         { name: "maharaj", email: "anilgg@test.com" },
         { name: "Swami", email: "anilcc@test.com" },
       ],
+      name: `Sambit - here is the example of filters using "Ucase" defined filter in main.js`,
     };
   },
   methods: {

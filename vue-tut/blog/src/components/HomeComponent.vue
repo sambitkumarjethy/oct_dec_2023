@@ -19,6 +19,9 @@
         <td>{{ user.email }}</td>
       </tr>
     </table>
+    <b>* {{ filterText | Ucase }}</b>
+    <br />
+    <b>* using curreny converter filter {{ amout | currencyConverter }}</b>
   </div>
 </template>
 <script>
@@ -46,6 +49,8 @@ export default {
         { id: 4, name: "Dhoni", email: "d@g.com" },
         { id: 5, name: "kuldeep", email: "k@g.com" },
       ],
+      filterText: "This text is using ucse filter",
+      amout: 100,
     };
   },
 };
