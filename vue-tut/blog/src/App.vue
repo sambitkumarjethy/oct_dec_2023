@@ -16,6 +16,7 @@
     />
     <SignUp />
     <LoginComponent />
+    <FormValidation />
     <!-- <HomeComponent data="Jethy" /> -->
   </div>
 </template>
@@ -30,6 +31,7 @@ import DataBind from "./components/DataBind.vue";
 import ChildComponent from "./components/ChildComponent.vue";
 import SignUp from "./components/SignUp.vue";
 import LoginComponent from "./components/LoginComponent.vue";
+import FormValidation from "./components/FormValidation.vue";
 export default {
   name: "App",
   components: {
@@ -42,6 +44,7 @@ export default {
     ChildComponent,
     SignUp,
     LoginComponent,
+    FormValidation,
   },
   data() {
     return {
