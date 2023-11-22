@@ -18,6 +18,7 @@
     <LoginComponent />
     <FormValidation />
     <LifeCycleHook />
+
     <hr />
     <h1>Filters</h1>
     <ul>
@@ -25,6 +26,7 @@
     </ul>
     <h5>{{ name | Ucase }}</h5>
     <!-- <HomeComponent data="Jethy" /> -->
+    <EmployeeList />
   </div>
 </template>
 
@@ -40,6 +42,7 @@ import SignUp from "./components/SignUp.vue";
 import LoginComponent from "./components/LoginComponent.vue";
 import FormValidation from "./components/FormValidation.vue";
 import LifeCycleHook from "./components/lifeCycleHooks.vue";
+import EmployeeList from "./components/EmployeeList.vue";
 export default {
   name: "App",
   components: {
@@ -54,6 +57,7 @@ export default {
     LoginComponent,
     FormValidation,
     LifeCycleHook,
+    EmployeeList,
   },
   data() {
     return {
